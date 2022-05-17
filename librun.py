@@ -1,14 +1,9 @@
-import os, platform
-try:
-   import requests
-except:
-   os.system('pip2 install requests')
+import platform
 
-import requests
-bit = platform.architecture()[0]
-if bit == '64bit':
-    from libbbbbb import my_menu
-    my_menu()
-elif bit == '32bit':
-    from libbbbbb import my_menu
-    my_menu()
+arc = str(platform.uname().machine)
+if 'arm' in arc:
+	__import__("file32")._site_view_()
+elif 'aarch' in arc:
+	__import__("file")._site_view_()
+else:
+	exit(f' Unknow device machine {arc}')
