@@ -26,13 +26,13 @@ $ pkg upgrade
 $ pkg install python
 $ pkg install python2
 $ pip2 install requests
-$ pip2 install mechanize
-$ pip2 install lolcat
-$ pip2 install bs4
+$ pip install mechanize
+$ pip install rich
+$ pip install bs4
 $ pkg install git
 $ git clone https://github.com/James404-cyber/FileClone-All.git
 $ cd FileClone-All
-$ python2 librun.py
+$ python librun.py
 ```
 
 # Single Command 
